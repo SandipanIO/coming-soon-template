@@ -145,7 +145,7 @@ contactOverlay.addEventListener('click', e => {
 });
 
 /*******************************************************************/
-/* Popup form validation */
+/* Contact form validation */
 /*******************************************************************/
 
 const contactForm = document.querySelector('#contact__form');
