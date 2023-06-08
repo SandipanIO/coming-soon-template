@@ -16,7 +16,7 @@
 </head>
 <body>
    <header class="header">
-      <img src="images/logo.svg" alt="" class="logo">
+      <img src="images/logo.svg" alt="Lorem Ipsum Logo" class="logo">
       <button id="btn-contact" class="btn btn--white">Contact Us</button>
    </header>
    <main class="main">
@@ -42,7 +42,7 @@
 
    <!-- Notify (Popup) -->
    <div class="popup white-box" data-visible="false">
-      <span id="popup-close" class="icon-close" aria-label="close popup">&times;</span>
+      <button id="popup-close" class="icon-close" aria-label="close popup">&times;</button>
       <div class="popup__image-box">
          <img src="images/notify.svg" alt="" class="popup__image">
       </div>
@@ -51,11 +51,14 @@
          <p class="popup__text">
             Subscribe to our newsletter and get notified about our product.
          </p>
-         <form action="#" method="post" id="popup-form" class="popup__form">
-            <input type="text" name="popup-name" id="popup-name" class="input" placeholder="Enter your Name" required>
-            <input type="email" name="popup-email" id="popup-email" class="input" placeholder="Enter your email" required>
+         <form action="#" method="post" id="popup__form" class="popup__form">
+            <label for="popup__name" class="sr-only">Name</label>
+            <input type="text" name="popup__name" id="popup__name" class="input" placeholder="Enter your Name" required>
+            
+            <label for="popup__email" class="sr-only">Email</label>
+            <input type="email" name="popup__email" id="popup__email" class="input" placeholder="Enter your email" required>
 
-            <button type="submit" id="btn-popup-submit" class="btn btn--black btn--small">Subscribe</button>
+            <button type="submit" id="popup__submit" class="btn btn--black btn--small">Subscribe</button>
          </form>
       </div>
    </div>
@@ -63,21 +66,21 @@
 
    <!-- Contact Form -->
    <div class="contact white-box" data-show-form="false">
-      <span id="contact-close" class="icon-close" aria-label="close contact panel">&times;</span>
+      <button id="contact-close" class="icon-close" aria-label="close contact panel">&times;</button>
       <h2 class="heading-2">Contact Us</h2>
       <p class="contact__text">Want to get in touch with us? You can use the form below. We'll get back to you soon.</p>
 
-      <form action="#" method="post" id="contact-form" class="contact__form">
-         <label for="contact-name" class="label">Name</label>
-         <input type="text" name="contact-name" id="contact-name" class="input" required>
+      <form action="#" method="post" id="contact__form" class="contact__form">
+         <label for="contact__name" class="label">Name</label>
+         <input type="text" name="contact__name" id="contact__name" class="input" required>
 
-         <label for="contact-email" class="label">Email</label>
-         <input type="email" name="contact-email" id="contact-email" class="input" required>
+         <label for="contact__email" class="label">Email</label>
+         <input type="email" name="contact__email" id="contact__email" class="input" required>
 
-         <label for="contact-message" class="label">Message</label>
-         <textarea name="contact-message" id="contact-message" cols="30" rows="5" class="textarea"></textarea>
+         <label for="contact__message" class="label">Message</label>
+         <textarea name="contact__message" id="contact__message" cols="30" rows="5" class="textarea"></textarea>
 
-         <button type="submit" id="btn-contact-submit" class="btn btn--black btn--small">Send</button>
+         <button type="submit" id="contact__submit" class="btn btn--black btn--small">Send</button>
       </form>
    </div>
    <div id="contact-overlay" class="overlay"></div>
