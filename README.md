@@ -9,7 +9,7 @@ This is a coming soon template built using HTML, CSS, and JavaScript. It has the
 
 **Desktop version:**
 
-![Desktop Version of Coming Soon Template](https://github.com/SandipanIO/frontend-mentor-projects/blob/main/huddle-landing-page/screenshots/huddle-landing-page-desktop-version.png)
+![Desktop Version of Coming Soon Template](https://github.com/SandipanIO/coming-soon-template/blob/main/screenshots/coming-soon-desktop-version.png)
 
 ## Links
 
