@@ -4,6 +4,7 @@ This is a coming soon template built using HTML, CSS, and JavaScript. It has the
 - Countdown timer
 - Popup form for newletter
 - Sliding contact form
+- Form validation
 
 ## Screenshot
 
