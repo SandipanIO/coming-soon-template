@@ -2,8 +2,8 @@
 
 This is a coming soon template built using HTML, CSS, and JavaScript. It has the following features:
 - Countdown timer
-- Sliding contact form
 - Popup form for newletter
+- Sliding contact form
 
 ## Screenshot
 
@@ -19,8 +19,6 @@ This is a coming soon template built using HTML, CSS, and JavaScript. It has the
 
 - HTML
 - CSS
-- Flexbox
-- CSS Grid
 - JavaScript
 
 ## Author
