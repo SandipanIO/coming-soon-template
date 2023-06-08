@@ -2,7 +2,7 @@
 
 This is a coming soon template built using HTML, CSS, and JavaScript. It is fully responsive and has the following features:
 - Countdown timer
-- Popup form for newletter
+- Popup form for newsletter
 - Sliding contact form
 - Form validation
 
