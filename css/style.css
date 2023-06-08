@@ -334,15 +334,17 @@ body {
    grid-template-columns: 1fr 1fr;
    gap: 0.6em;
    z-index: 10;
-   transition: all 0.3s;
+   transition: all 0.3s ease-out;
    opacity: 0;
    pointer-events: none;
+   visibility: hidden;
 }
 
 .popup[data-visible="true"] {
    transform: translate(-50%, -50%) scale(1);
    opacity: 1;
    pointer-events: all;
+   visibility: visible;
 }
 
 .popup__image {
@@ -389,11 +391,13 @@ body {
    overflow-y: auto;
    z-index: 100;
    transform: translateX(100%);
+   visibility: hidden;
    transition: all 0.5s;
 }
 
 .contact[data-show-form="true"] {
    transform: translateX(0);
+   visibility: visible;
 }
 
 .contact__text {
