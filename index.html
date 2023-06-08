@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+   <!-- Main Stylesheet -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <title>Coming Soon</title>
+</head>
+<body>
+   <header class="header container">
+      <img src="images/logo.svg" alt="" class="logo">
+      <button id="btn-contact" class="btn btn--white">Contact Us</button>
+   </header>
+   <main class="main">
+      <div class="container">
+         <section class="hero">
+            <p class="hero__text">We are</p>
+            <h1 class="heading-1 hero__heading">
+               Coming Soon
+            </h1>
+            <p class="hero__content">
+               We are preparing something amazing and exciting for you.
+            </p>
+            <p class="hero__content">
+               Get notified when we launch our product 
+               <button id="btn-popup" class="btn btn--white btn--square">
+                  Notify Me &RightArrow;
+               </button>
+            </p>
+            <div class="countdown">
+               <div class="countdown__content countdown__days"></div>
+               <div class="countdown__content countdown__hours"></div>
+               <div class="countdown__content countdown__minutes"></div>
+               <div class="countdown__content countdown__seconds"></div>
+            </div>
+         </section>
+      </div>
+   </main>
+
+   <!-- Notify (Popup) -->
+   <div class="popup white-box" data-visible="false">
+      <span id="popup-close" class="icon-close" aria-label="close popup">&times;</span>
+      <div class="popup__image-box">
+         <img src="images/notify.svg" alt="" class="popup__image">
+      </div>
+      <div class="popup__content">
+         <h2 class="heading-2">Subscribe</h2>
+         <p class="popup__text">
+            Subscribe to our newsletter and get notified about our product.
+         </p>
+         <form action="#" method="post" id="popup-form" class="popup__form">
+            <input type="text" name="popup-name" id="popup-name" class="input" placeholder="Enter your Name" required>
+            <input type="email" name="popup-email" id="popup-email" class="input" placeholder="Enter your email" required>
+
+            <button type="submit" id="btn-popup-submit" class="btn btn--black btn--small">Subscribe</button>
+         </form>
+      </div>
+   </div>
+   <div id="popup-overlay" class="overlay"></div>
+
+   <!-- Contact Form -->
+   <div class="contact white-box" data-show-form="false">
+      <span id="contact-close" class="icon-close" aria-label="close contact panel">&times;</span>
+      <h2 class="heading-2">Contact Us</h2>
+      <p class="contact__text">Want to get in touch with us? You can use the form below. We'll get back to you soon.</p>
+
+      <form action="#" method="post" id="contact-form" class="contact__form">
+         <label for="contact-name" class="label">Name</label>
+         <input type="text" name="contact-name" id="contact-name" class="input" required>
+
+         <label for="contact-email" class="label">Email</label>
+         <input type="email" name="contact-email" id="contact-email" class="input" required>
+
+         <label for="contact-message" class="label">Message</label>
+         <textarea name="contact-message" id="contact-message" cols="30" rows="5" class="textarea"></textarea>
+
+         <button type="submit" id="btn-contact-submit" class="btn btn--black btn--small">Send</button>
+      </form>
+   </div>
+   <div id="contact-overlay" class="overlay"></div>
+
+   <script src="js/script.js"></script>
+</body>
+</html>

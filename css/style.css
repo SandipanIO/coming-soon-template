@@ -1,0 +1,313 @@
+:root {
+   --color-dark-gray: #333333;
+   --color-lighter-gray: #888888;
+   --color-transparent-white: rgba(255, 255, 255, 0.9);
+   --color-white: #ffffff;
+
+   --max-width: calc(1200rem / 16);
+}
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   font-size: calc(16rem / 16);
+   font-weight: 400;
+   line-height: 1.5;
+   color: var(--color-white);
+   background: linear-gradient(to right, rgba(255, 94, 97, 0.95), rgba(255, 153, 102, 0.95)), 
+               url(../images/bg-image-min.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 100vh;
+   padding: 1em;
+   writing-mode: horizontal-tb;
+   position: relative;
+}
+
+/*******************************************************************/
+/* Utility Classes */
+/*******************************************************************/
+
+.container {
+   max-width: var(--max-width);
+   margin: 0 auto;
+}
+
+.overlay {
+   position: absolute;
+   inset: 0;
+   background-color: rgba(0,0,0,0.7);
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.5s;
+}
+
+.overlay--active {
+   opacity: 1;
+   pointer-events: all;
+}
+
+.white-box {
+   color: var(--color-dark-gray);
+   background-color: var(--color-white);
+   padding: 1.8em 2.5em;
+   box-shadow: 0 0 1.5em 0.6em rgba(0,0,0,0.15);
+}
+
+.icon-close {
+   position: absolute;
+   top: 10px;
+   right: 25px;
+   font-size: calc(30rem / 16);
+   font-weight: 400;
+   cursor: pointer;
+}
+
+/*******************************************************************/
+/* Heading */
+/*******************************************************************/
+
+.heading-1 {
+   font-size: calc(50rem / 16);
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 0.2em;
+}
+
+.heading-2 {
+   font-size: calc(25rem / 16);
+   font-weight: 600;
+   padding-block: 0.5em;
+}
+
+/*******************************************************************/
+/* Button */
+/*******************************************************************/
+
+.btn {
+   display: inline-block;
+   font-family: inherit;
+   font-size: calc(15rem / 16);
+   font-weight: 600;
+   line-height: 0.5;
+   text-transform: uppercase;
+   border-radius: 2em;
+   padding: 1.1em 2.7em;
+   box-shadow: 0 0 0.3em 0 rgba(0,0,0,0.1);
+   cursor: pointer;
+   transition: all 0.3s;
+}
+
+.btn--white {
+   color: var(--color-dark-gray);
+   background-color: var(--color-transparent-white);
+   border: 3px solid var(--color-white);
+}
+
+.btn--white:hover {
+   color: var(--color-white);
+   background-color: transparent;
+}
+
+.btn--black {
+   color: var(--color-transparent-white);
+   background-color: var(--color-dark-gray);
+   border: 3px solid var(--color-dark-gray);
+}
+
+.btn--black:hover {
+   color: var(--color-dark-gray);
+   background-color: transparent;
+}
+
+.btn--small {
+   font-size: calc(14rem / 16);
+   margin-block: 1.2em;
+}
+
+.btn--square {
+   font-size:calc(13rem / 16) ;
+   border: 1px solid var(--color-transparent-white);
+   border-radius: 0;
+   padding: 0.7em;
+   margin-inline: 0.5em;
+}
+
+/*******************************************************************/
+/* Form Elements */
+/*******************************************************************/
+
+.label,
+.input,
+.textarea {
+   font-family: inherit;
+   display: block;
+   width: 100%;
+}
+
+.label {
+   margin-bottom: 0.3em;
+}
+
+.input,
+.textarea {
+   font-size: calc(13rem / 16);
+   padding: 0.6em;
+   margin-bottom: 1em;
+   border: 1px solid var(--color-lighter-gray);
+}
+
+/*******************************************************************/
+/* Header Section */
+/*******************************************************************/
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-block: 2em;
+}
+
+.logo {
+   width: clamp(calc(150rem / 16), 15vw ,calc(200rem / 16));
+   cursor: pointer;
+}
+
+/*******************************************************************/
+/* Hero Section */
+/*******************************************************************/
+
+.hero {
+   display: grid;
+   place-items: center;
+   padding-block: 2.5em;
+}
+
+.hero__text {
+   font-size: calc(20rem / 16);
+   text-transform: uppercase;
+   color: var(--color-transparent-white);
+   margin-bottom: 0.25em;
+}
+
+.hero__heading {
+   margin-bottom: 0.4em;
+}
+
+.hero__content {
+   color: var(--color-transparent-white);
+   margin-bottom: 0.6em;
+   display: flex;
+   align-items: center;
+}
+
+/*******************************************************************/
+/* Countdown */
+/*******************************************************************/
+
+.countdown {
+   padding: 1.8em 0.6em;
+   margin-left: 0.5em;
+   display: flex;
+}
+
+.countdown__content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: calc(50rem / 16);
+   font-weight: 600;
+}
+
+.countdown__content:not(:last-child) {
+   margin-right: 1.6em;
+}
+
+.countdown__content span {
+   font-size: calc(20rem / 16);
+   font-weight: 400;
+   text-transform: uppercase;
+   color: var(--color-transparent-white);
+}
+
+/*******************************************************************/
+/* Notify Popup */
+/*******************************************************************/
+
+.popup {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(1.1);
+   width: 90%;
+   max-width: calc(650rem / 16);
+   border-radius: 0.4em;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0.6em;
+   z-index: 10;
+   transition: all 0.3s;
+   opacity: 0;
+   pointer-events: none;
+}
+
+.popup[data-visible="true"] {
+   transform: translate(-50%, -50%) scale(1);
+   opacity: 1;
+   pointer-events: all;
+}
+
+.popup__image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.popup__content {
+   padding-left: 1.5em;
+}
+
+.popup__text {
+   font-size: calc(15rem / 16);
+   margin-bottom: 2em;
+}
+
+/*******************************************************************/
+/* Contact */
+/*******************************************************************/
+
+.contact {
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   max-width: calc(450rem / 16);
+   overflow-y: auto;
+   z-index: 100;
+   transform: translateX(100%);
+   transition: all 0.5s;
+}
+
+.contact[data-show-form="true"] {
+   transform: translateX(0);
+}
+
+.contact__text {
+   font-size: calc(15rem / 16);
+   margin-bottom: 2em;
+}
