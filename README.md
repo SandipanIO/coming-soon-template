@@ -1,6 +1,6 @@
 # Coming Soon Template
 
-This is a coming soon template built using HTML, CSS, and JavaScript. It has the following features:
+This is a coming soon template built using HTML, CSS, and JavaScript. It is fully responsive and has the following features:
 - Countdown timer
 - Popup form for newletter
 - Sliding contact form
