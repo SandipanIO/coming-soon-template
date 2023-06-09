@@ -16,7 +16,10 @@
 </head>
 <body>
    <header class="header">
-      <img src="images/logo.svg" alt="Lorem Ipsum Logo" class="logo">
+      <picture>
+         <source media="(min-width: 525px)" srcset="images/logo.svg">
+         <img src="images/logo-mobile.svg" alt="Lorem Ipsum Logo" class="logo">
+      </picture>
       <button id="btn-contact" class="btn btn--white">Contact Us</button>
    </header>
    <main class="main">
@@ -39,6 +42,9 @@
          </div>
       </section>
    </main>
+   <footer class="footer">
+      <p>Coded by <a href="https://twitter.com/SandipanIO">Sandipan Mukherjee</a></p>
+   </footer>
 
    <!-- Notify (Popup) -->
    <div class="popup white-box" data-visible="false">
