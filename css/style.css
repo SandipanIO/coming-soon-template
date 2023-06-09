@@ -36,6 +36,10 @@ body {
    position: relative;
 }
 
+img {
+   display: block;
+}
+
 /*******************************************************************/
 /* Utility Classes */
 /*******************************************************************/
@@ -142,7 +146,7 @@ body {
 @media only screen and (max-width: 525px) {
    .btn {
       font-size: calc(14rem / 16);
-      padding: 1em 2.2em;
+      padding: 1em 2em;
    }
 }
 
@@ -221,8 +225,14 @@ body {
 }
 
 .logo {
-   width: clamp(calc(150rem / 16), 15vw ,calc(200rem / 16));
+   width: clamp(calc(160rem / 16), 15vw ,calc(200rem / 16));
    cursor: pointer;
+}
+
+@media only screen and (max-width: 525px) {
+   .logo {
+      width: calc(40rem / 16);
+   }
 }
 
 /*******************************************************************/
@@ -403,4 +413,12 @@ body {
 .contact__text {
    font-size: calc(15rem / 16);
    margin-bottom: 2em;
+}
+
+/*******************************************************************/
+/* Footer */
+/*******************************************************************/
+
+.footer {
+   display: none;
 }
