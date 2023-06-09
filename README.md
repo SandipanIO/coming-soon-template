@@ -25,4 +25,3 @@ This is a coming soon template built using HTML, CSS, and JavaScript. It is full
 ## Author
 
 - Twitter - [@SandipanIO](https://www.twitter.com/SandipanIO)
-- Frontend Mentor - [@SandipanIO](https://www.frontendmentor.io/profile/SandipanIO)
