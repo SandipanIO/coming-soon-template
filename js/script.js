@@ -2,7 +2,7 @@
 /* Countdown Timer */
 /*******************************************************************/
 
-const launchDate = new Date('June 30, 2023 23:59:59');
+const launchDate = new Date('October 31, 2023 23:59:59');
 
 const daysLeft = document.querySelector('.countdown__days');
 const hoursLeft = document.querySelector('.countdown__hours');
@@ -82,6 +82,22 @@ popupOverlay.addEventListener('click', e => {
    popup.setAttribute('data-visible', 'false');
    popupOverlay.classList.remove('overlay--active');
 });
+
+
+/*
+
+// To automatically show the popup after 5 seconds
+
+const showPopup = () => {
+   popup.setAttribute('data-visible', 'true');
+   popupOverlay.classList.add('overlay--active');
+
+   clearTimeout(showPopup);
+};
+
+const modal = setTimeout(showPopup, 5000);
+
+*/
 
 /*******************************************************************/
 /* Popup form validation */
